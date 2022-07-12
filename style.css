@@ -1,0 +1,14 @@
+#box{
+	width:250px;
+	height:200px;
+	background-color:#666;
+	border-radius: 10px;
+    box-shadow: 10px 5px 5px grey;
+	}
+
+#imgbox{
+    box-shadow: 10px 5px 5px grey;
+    border-radius: 10px;
+
+
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css" type="text/css"/>
+    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Maria´s Tour</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ajuda</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Blog.html" class="nav-link disabled">Blog</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <button class="btn btn-outline-success" type="submit">Menu</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <p class="lead"></p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Cadastre-se e aproveite os melhores preços em passagens aéreas!</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Insira um nome válido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Sobrenome</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Insira um sobrenome válido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com">
+              <div class="invalid-feedback">
+                Por favor, insira um email válido
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="zip" placeholder="ex:123456-000" required>
+              <div class="invalid-feedback">
+              Por favor, insira um CEP válido.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+                <label for="zip" class="form-label">Número</label>
+                <input type="text" class="form-control" id="number" placeholder="" required>
+                <div class="invalid-feedback">
+                 Insira o número
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">CPF</label>
+              <input type="text" class="form-control" id="" placeholder="">
+            </div>
+            <br>
+            <div class="col-md-5">
+                <label for="country" class="form-label">Gênero</label>
+                <select class="form-label" id="gender" required>
+                  <option value="">Escolha...</option>
+                  <option>Feminino</option>
+                  <option>Masculino</option>
+                  <option>Outros</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <br>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Data de nascimento</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                 Insira o número
+                </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Senha</label>
+              <input type="text" class="form-control" id="zip" placeholder="Senha:" required>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">Li e aceito os Termos e Condições</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Envie-me promoções por email</label>
+          </div>
+          <br>
+          <br>
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Cadastre-se</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2005–2022 Maria´s Tour</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+  </body>
+</html>
